@@ -14,7 +14,7 @@ const Dashboard = () => {
   }, []);
 
   const getImages = () => {
-    axios.get("http://localhost:5000/user/images").then((res) => {
+    axios.get("https://gallery-pp.herokuapp.com/user/images").then((res) => {
       res.data.map((image) => {
         setImages((prevState) => [...prevState, image.fileLink]);
       });

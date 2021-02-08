@@ -30,7 +30,7 @@ class Login extends Component {
     event.preventDefault();
     const { email, password } = this.state;
     axios
-      .post("http://localhost:5000/user/login", {
+      .post("https://gallery-pp.herokuapp.com/user/login", {
         email: email,
         password: password
       })

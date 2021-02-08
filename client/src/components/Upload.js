@@ -46,7 +46,7 @@ class Upload extends Component {
 
     if (!(URL === " ")) {
       axios
-        .post("http://localhost:5000/user/upload", data, {
+        .post("https://gallery-pp.herokuapp.com/user/user/upload", data, {
           headers: {
             "Content-Type": "application/json",
             Authorization:
