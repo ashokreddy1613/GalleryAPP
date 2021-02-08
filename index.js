@@ -32,7 +32,7 @@ const app = express();
 // Takes the raw requests and turns them into usable properties on req.body
 //app.use(bodyParser.urlencoded()); // x-www-form-urlencoded <form>
 app.use(bodyParser.json()); // application/json
-app.use(cors(corsOptions));
+app.use(cors());
 
 //Cors middleware to allow the requests from different origins
 app.use((req, res, next) => {
