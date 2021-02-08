@@ -15,19 +15,19 @@ connectDB()
 
 const app = express();
 
-const whitelist = ['http://localhost:3000', 'http://localhost:5000', 'https://gallery-pp.herokuapp.com/']
-const corsOptions = {
-  origin: function (origin, callback) {
-    console.log("** Origin of request " + origin)
-    if (whitelist.indexOf(origin) !== -1 || !origin) {
-      console.log("Origin acceptable")
-      callback(null, true)
-    } else {
-      console.log("Origin rejected")
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
-}
+// const whitelist = ['http://localhost:3000', 'http://localhost:5000', 'https://gallery-pp.herokuapp.com/']
+// const corsOptions = {
+//   origin: function (origin, callback) {
+//     console.log("** Origin of request " + origin)
+//     if (whitelist.indexOf(origin) !== -1 || !origin) {
+//       console.log("Origin acceptable")
+//       callback(null, true)
+//     } else {
+//       console.log("Origin rejected")
+//       callback(new Error('Not allowed by CORS'))
+//     }
+//   }
+// }
 //body parser middleware
 // Takes the raw requests and turns them into usable properties on req.body
 //app.use(bodyParser.urlencoded()); // x-www-form-urlencoded <form>
