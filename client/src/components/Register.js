@@ -32,7 +32,7 @@ class Register extends Component {
     event.preventDefault();
     const { fullName, email, password } = this.state;
     axios
-      .post("https://poc-express-api-heroku.herokuapp.com/user/signup", {
+      .post("http://localhost:5000/user/signup", {
         fullName: fullName,
         email: email,
         password: password
