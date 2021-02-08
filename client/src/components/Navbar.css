@@ -1,0 +1,46 @@
+.Navbar {
+    background-color: hsl(226, 65%, 15%);
+    width: 100%;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex
+}
+.Navbar_left {
+    flex: 50;
+    display: flex;
+    max-height: 80px;
+    justify-content: left;
+    align-items: center;
+    padding-left: 25px;
+}
+.Navbar_left > a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-left: 15px;
+}
+.Navbar_right {
+    flex: 50;
+    display: flex;
+    max-height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 25px;
+}
+.Navbar_right > a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.upload_form {
+    float: right;
+    border: none !important;
+}
+
+@media only screen and (max-width:750px){
+    .Navbar_right> a{
+        font-size: 15px;
+    }
+}
