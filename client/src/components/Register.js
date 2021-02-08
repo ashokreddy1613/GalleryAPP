@@ -32,7 +32,7 @@ class Register extends Component {
     event.preventDefault();
     const { fullName, email, password } = this.state;
     axios
-      .post("http://localhost:5000/user/signup", {
+      .post("https://gallery-pp.herokuapp.com/user/signup", {
         fullName: fullName,
         email: email,
         password: password
